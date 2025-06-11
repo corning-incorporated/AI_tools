@@ -1,5 +1,7 @@
 import sys
 from pathlib import Path
+
+
 from typing import Annotated, Optional, Tuple
 
 from pydantic import BaseModel, PlainValidator
@@ -64,7 +66,8 @@ class AppSettings(BaseSettings):
     debug: DebugSettings = DebugSettings()
 
     cache_dir: Path = Path.home() / ".cache" / "docling"
-    artifacts_path: Optional[Path] = None
+    artifacts_path: Optional[Path] = Path("docling/local_models/all-MiniLM-L6-v2").expanduser()
+
 
 
 settings = AppSettings()
