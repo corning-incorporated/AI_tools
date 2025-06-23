@@ -1,6 +1,0 @@
-[submodule "huggingface/huggingface_hub"]
-	path = huggingface/huggingface_hub
-	url = https://github.com/huggingface/huggingface_hub.git
-[submodule "huggingface/all-MiniLM-L6-v2"]
-	path = huggingface/all-MiniLM-L6-v2
-	url = https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2.git
